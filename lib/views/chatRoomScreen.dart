@@ -1,6 +1,4 @@
 import 'package:chatapp/helper/authenticate.dart';
-import 'package:chatapp/helper/constants.dart';
-import 'package:chatapp/helper/helperfunctions.dart';
 import 'package:chatapp/services/auth.dart';
 import 'package:chatapp/views/search.dart';
 import 'package:flutter/material.dart';
