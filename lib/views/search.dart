@@ -51,7 +51,7 @@ class _SearchScreenState extends State<SearchScreen> {
   ///create chatroom, send user to conversation screen, push replacement
 
   createChatRoomAndStartConversation({String userName}){
-    print('${Constants.myName} createChatRoom');
+    print('${Constants.myName} + createChatRoom');
     if(userName != Constants.myName) {
       String chatRoomId = getChatRoomId(userName, Constants.myName);
       List<String> users = [userName, Constants.myName];

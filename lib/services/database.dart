@@ -25,6 +25,7 @@ class DatabaseMethods {
         .document(charRoomId).setData(chatRoomMap).catchError((e){
           print(e.toString());
     });
-
   }
+
+
 }
