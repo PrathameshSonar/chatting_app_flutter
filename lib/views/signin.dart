@@ -32,12 +32,12 @@ class _SignInState extends State<SignIn> {
   signIn() {
     if(formKey.currentState.validate()){
       
-      HelperFunctions.saveUserEmailInSharedPreference(emailTextEditingController.text);
+      HelperFunctions.saveUserEmailSharedPreference(emailTextEditingController.text);
 
       databaseMethods.getUserByUserEmail(emailTextEditingController.text)
           .then((val) {
         snapshotUserInfo = val;
-        HelperFunctions.saveUserNameInSharedPreference(snapshotUserInfo.documents[0].data['name']);
+        HelperFunctions.saveUserNameSharedPreference(snapshotUserInfo.documents[0].data['name']);
         //print('${snapshotUserInfo.documents[0].data['name']} this is not good');
       });
       
