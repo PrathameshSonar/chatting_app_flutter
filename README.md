@@ -1,6 +1,6 @@
 # chatapp
 
-A new Flutter application.
+A new Chatting Application cretaed with Flutter. 
 
 ## Getting Started
 
